@@ -1,0 +1,19 @@
+{
+  "name": "template-react",
+  "version": "1.0.0",
+  "description": "template react ",
+  "main": "index.js",
+  "repository": "https://github.com/wrariza/template-react.git",
+  "author": "william ariza <skchard09@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "next": "^2.4.0",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-styled-flexboxgrid": "^1.1.2",
+    "styled-components": "^1.4.6"
+  },
+  "scripts": {
+    "dev": "next"
+  }
+}
