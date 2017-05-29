@@ -16,6 +16,9 @@ class Template extends Document {
                         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css"
                         rel="stylesheet"
                     />
+                    <link 
+                        href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"
+                    />
                 </Head>
                 <body>
                     <Main/>

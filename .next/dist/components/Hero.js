@@ -42,13 +42,17 @@ var _BoxInfo = require('../components/BoxInfo.js');
 
 var _BoxInfo2 = _interopRequireDefault(_BoxInfo);
 
+var _Title = require('./Title.js');
+
+var _Title2 = _interopRequireDefault(_Title);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var _jsxFileName = '/Users/wrariza/MEGA/apps/template-react/components/Hero.js';
 
-var _templateObject = (0, _taggedTemplateLiteral3.default)(['\n   height: 20rem;\n   background-color: ', ';\n'], ['\n   height: 20rem;\n   background-color: ', ';\n']);
+var _templateObject = (0, _taggedTemplateLiteral3.default)(['\n   height: 700px;\n   background-image: ', ';\n   color: white;\n'], ['\n   height: 700px;\n   background-image: ', ';\n   color: white;\n']);
 
-var background = 'rgb(53, 55, 76)';
+var background = 'url(../static/fondo.png)';
 
 var GridHero = (0, _styledComponents2.default)(_reactStyledFlexboxgrid.Grid)(_templateObject, background);
 
@@ -67,14 +71,37 @@ var Hero = function (_Component) {
             return _react2.default.createElement(GridHero, {
                 __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 16
+                    lineNumber: 18
+                }
+            }, _react2.default.createElement(_reactStyledFlexboxgrid.Row, {
+                __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 19
+                }
+            }, _react2.default.createElement(_reactStyledFlexboxgrid.Col, { xsOffset: 2, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 20
+                }
+            }, _react2.default.createElement(_Title2.default, {
+                __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 21
+                }
+            }))), _react2.default.createElement(_reactStyledFlexboxgrid.Row, {
+                __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 24
+                }
+            }, _react2.default.createElement(_reactStyledFlexboxgrid.Col, { xs: 6, xsOffset: 2, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 25
                 }
             }, _react2.default.createElement(_BoxInfo2.default, {
                 __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 17
+                    lineNumber: 26
                 }
-            }));
+            }))));
         }
     }]);
 

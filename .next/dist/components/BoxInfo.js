@@ -4,25 +4,9 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _getPrototypeOf = require('babel-runtime/core-js/object/get-prototype-of');
+var _taggedTemplateLiteral2 = require('babel-runtime/helpers/taggedTemplateLiteral');
 
-var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
-
-var _classCallCheck2 = require('babel-runtime/helpers/classCallCheck');
-
-var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
-
-var _createClass2 = require('babel-runtime/helpers/createClass');
-
-var _createClass3 = _interopRequireDefault(_createClass2);
-
-var _possibleConstructorReturn2 = require('babel-runtime/helpers/possibleConstructorReturn');
-
-var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
-
-var _inherits2 = require('babel-runtime/helpers/inherits');
-
-var _inherits3 = _interopRequireDefault(_inherits2);
+var _taggedTemplateLiteral3 = _interopRequireDefault(_taggedTemplateLiteral2);
 
 var _react = require('react');
 
@@ -34,38 +18,69 @@ var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
 var _reactStyledFlexboxgrid = require('react-styled-flexboxgrid');
 
-var _Title = require('./Title.js');
+var _Button = require('./Button.js');
 
-var _Title2 = _interopRequireDefault(_Title);
+var _Button2 = _interopRequireDefault(_Button);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var _jsxFileName = '/Users/wrariza/MEGA/apps/template-react/components/BoxInfo.js';
 
+var _templateObject = (0, _taggedTemplateLiteral3.default)(['\n    width: 516px; \n    height: 500px;\n    font-family: \'Lato\', sans-serif;\n    top: 130px;\n    position: relative;\n'], ['\n    width: 516px; \n    height: 500px;\n    font-family: \'Lato\', sans-serif;\n    top: 130px;\n    position: relative;\n']),
+    _templateObject2 = (0, _taggedTemplateLiteral3.default)(['\n    ', '\n    padding-left: 20px;\n'], ['\n    ', '\n    padding-left: 20px;\n']),
+    _templateObject3 = (0, _taggedTemplateLiteral3.default)(['\n    background-color: red;\n    width: 4px;\n    height: 139px;\n    position: absolute;\n    margin-top: 12px;\n}\n'], ['\n    background-color: red;\n    width: 4px;\n    height: 139px;\n    position: absolute;\n    margin-top: 12px;\n}\n']),
+    _templateObject4 = (0, _taggedTemplateLiteral3.default)(['\n    font-size: 18px;\n    line-height: 26px;\n    margin-bottom: 40px;\n'], ['\n    font-size: 18px;\n    line-height: 26px;\n    margin-bottom: 40px;\n']),
+    _templateObject5 = (0, _taggedTemplateLiteral3.default)(['\n    position: relative;\n    top: 50px;\n'], ['\n    position: relative;\n    top: 50px;\n']);
 
-var BoxInfo = function (_Component) {
-    (0, _inherits3.default)(BoxInfo, _Component);
+var Container = _styledComponents2.default.section(_templateObject);
+var styleTitle = '\n    h1{\n        font-size: 3rem;\n        margin: 0px;\n    }\n    h2{\n        font-size: 1.8rem;\n        margin-top: 10px;\n        margin-bottom: 50px;\n    }\n';
 
-    function BoxInfo(props) {
-        (0, _classCallCheck3.default)(this, BoxInfo);
+var ContainerT = _styledComponents2.default.section(_templateObject2, styleTitle);
 
-        return (0, _possibleConstructorReturn3.default)(this, (BoxInfo.__proto__ || (0, _getPrototypeOf2.default)(BoxInfo)).call(this, props));
-    }
+var Line = _styledComponents2.default.div(_templateObject3);
 
-    (0, _createClass3.default)(BoxInfo, [{
-        key: 'render',
-        value: function render() {
-            return _react2.default.createElement(_Title2.default, {
-                name: 'Template',
-                __source: {
-                    fileName: _jsxFileName,
-                    lineNumber: 13
-                }
-            });
+var Info = _styledComponents2.default.p(_templateObject4);
+
+var Button = (0, _styledComponents2.default)(_Button2.default)(_templateObject5);
+
+function BoxInfo() {
+    return _react2.default.createElement(Container, {
+        __source: {
+            fileName: _jsxFileName,
+            lineNumber: 52
         }
-    }]);
-
-    return BoxInfo;
-}(_react.Component);
+    }, _react2.default.createElement(Line, {
+        __source: {
+            fileName: _jsxFileName,
+            lineNumber: 53
+        }
+    }), _react2.default.createElement(ContainerT, {
+        __source: {
+            fileName: _jsxFileName,
+            lineNumber: 54
+        }
+    }, _react2.default.createElement('h1', {
+        __source: {
+            fileName: _jsxFileName,
+            lineNumber: 55
+        }
+    }, 'Clean & Beautiful   landing page template'), _react2.default.createElement('h2', {
+        __source: {
+            fileName: _jsxFileName,
+            lineNumber: 58
+        }
+    }, 'with ultimate design & features.')), _react2.default.createElement(Info, {
+        __source: {
+            fileName: _jsxFileName,
+            lineNumber: 62
+        }
+    }, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh neque, convallis ut interdum a, consequat sit amet mauris. Vivamus sed tincidunt enim.'), _react2.default.createElement(Button, {
+        name: 'View Detail',
+        __source: {
+            fileName: _jsxFileName,
+            lineNumber: 65
+        }
+    }));
+}
 
 exports.default = BoxInfo;
