@@ -29,19 +29,25 @@ const InputSeacher = styled.input`
 
 const Button = styled.button`
     ${DefaultStyles}
-    backgroud-color: #ea83ee;
+    background-color: #2b3133;
     padding: 0.5rem 46px;
     text-transform: uppercase;
     font-weight: bold; 
     font-family: 'Josefin';
     color: white;
     box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.3);
-     font-size: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
     @media (max-width: 1024px){
          margin-top: 1rem;
     }
-`;
 
+    &:hover {
+        background-color: white;
+        color: #2b3133;
+        transform: scale(1.1);
+    }
+`;
 
 function Searcher(props) {
     return(
@@ -49,7 +55,7 @@ function Searcher(props) {
             <InputSeacher
                 name="buscar"
                 type="text"
-                placeholder="ingrese sus palabras favoritas"
+                placeholder="ingrese sus palabras favoritas  y cree su candado"
             />
             <Button>Generar</Button>
         </Form>

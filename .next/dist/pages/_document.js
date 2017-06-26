@@ -34,7 +34,7 @@ var _document2 = _interopRequireDefault(_document);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _jsxFileName = '/Users/wrariza/MEGA/apps/template-react/pages/_document.js?entry';
+var _jsxFileName = '/Users/wrariza/MEGA/apps/candado/pages/_document.js?entry';
 
 
 var Template = function (_Document) {
