@@ -10,22 +10,20 @@ const DefaultStyles = `
 const Form = styled.form`
     display: flex;
     font-weight: bold;
-    font-family: 'arial'
-    top: 200px;
-    position: relative;
+    font-family: 'Josefin'
     @media (max-width: 1024px) {
         flex-direction: column;
     }
 `;
 
 const InputSeacher = styled.input`
-    flex: 1; 
+    flex: 1;
     margin-right: 1rem;
-    padding: 0.5 rem 1rem;
+    padding: 0.5rem 1rem;
     font-size: 1rem;
     ${DefaultStyles}
-    @media (max-width: 1024px){
-         margin-right: 0px;
+    @media (max-width: 1024px) {
+        margin-right: 0;
     }
 `;
 
@@ -35,6 +33,7 @@ const Button = styled.button`
     padding: 0.5rem 46px;
     text-transform: uppercase;
     font-weight: bold; 
+    font-family: 'Josefin';
     color: white;
     box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.3);
      font-size: 1rem;

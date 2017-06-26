@@ -1,1 +1,1 @@
-# template-react
+# Candado app

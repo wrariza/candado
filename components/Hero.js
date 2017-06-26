@@ -2,35 +2,44 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import { Grid, Row , Col} from 'react-styled-flexboxgrid';
 import Logo from './Title.js';
-import SearcherImport from './Search';
+import Searcher from './Search';
 
-var background = 'url(../static/fondo.png)';
+var wallpaper = 'url(../static/seguros.jpg)';
+
+const Background = styled.div`
+   background-image: ${wallpaper};
+`
+const Gradient = styled.div`
+  background: linear-gradient(to left, rgba(56, 56, 56, 0.5), rgba(64, 60, 64, 0.5));
+`;
 
 const GridHero = styled(Grid)`
-   height: 700px;
-   background-image: ${background};
+   height: 25rem;
    color: white;
-`
-
-const Searcher = styled(SearcherImport)`
-    top: 10px;
+   text-aligh: center;
 `
 
 class Hero extends Component {
     render() {
         return(
-            <GridHero>
-                <Row>
-                    <Col xsOffset={2} xs={10}>
-                        <Logo/>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col className="searcher" xsOffset={2} xs={8} >
-                        <Searcher/>
-                    </Col>
-                </Row>
-            </GridHero>
+            <Background>
+                <Gradient>
+                    <GridHero>
+                        <Row>
+                            <Col xsOffset={2} xs={5}>
+                                <Logo 
+                                    name="Candado"
+                                />
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col className="searcher" xsOffset={2} xs={8} >
+                                <Searcher/>
+                            </Col>
+                        </Row>
+                    </GridHero>
+                </Gradient>
+            </Background>
         )
     }
 }

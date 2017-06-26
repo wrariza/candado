@@ -20,9 +20,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var _jsxFileName = '/Users/wrariza/MEGA/apps/template-react/components/Search.js';
 
-var _templateObject = (0, _taggedTemplateLiteral3.default)(['\n    display: flex;\n    font-weight: bold;\n    font-family: \'arial\'\n    top: 200px;\n    position: relative;\n    @media (max-width: 1024px) {\n        flex-direction: column;\n    }\n'], ['\n    display: flex;\n    font-weight: bold;\n    font-family: \'arial\'\n    top: 200px;\n    position: relative;\n    @media (max-width: 1024px) {\n        flex-direction: column;\n    }\n']),
-    _templateObject2 = (0, _taggedTemplateLiteral3.default)(['\n    flex: 1; \n    margin-right: 1rem;\n    padding: 0.5 rem 1rem;\n    font-size: 1rem;\n    ', '\n    @media (max-width: 1024px){\n         margin-right: 0px;\n    }\n'], ['\n    flex: 1; \n    margin-right: 1rem;\n    padding: 0.5 rem 1rem;\n    font-size: 1rem;\n    ', '\n    @media (max-width: 1024px){\n         margin-right: 0px;\n    }\n']),
-    _templateObject3 = (0, _taggedTemplateLiteral3.default)(['\n    ', '\n    backgroud-color: #ea83ee;\n    padding: 0.5rem 46px;\n    text-transform: uppercase;\n    font-weight: bold; \n    color: white;\n    box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.3);\n     font-size: 1rem;\n    @media (max-width: 1024px){\n         margin-top: 1rem;\n    }\n'], ['\n    ', '\n    backgroud-color: #ea83ee;\n    padding: 0.5rem 46px;\n    text-transform: uppercase;\n    font-weight: bold; \n    color: white;\n    box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.3);\n     font-size: 1rem;\n    @media (max-width: 1024px){\n         margin-top: 1rem;\n    }\n']);
+var _templateObject = (0, _taggedTemplateLiteral3.default)(['\n    display: flex;\n    font-weight: bold;\n    font-family: \'Josefin\'\n    @media (max-width: 1024px) {\n        flex-direction: column;\n    }\n'], ['\n    display: flex;\n    font-weight: bold;\n    font-family: \'Josefin\'\n    @media (max-width: 1024px) {\n        flex-direction: column;\n    }\n']),
+    _templateObject2 = (0, _taggedTemplateLiteral3.default)(['\n    flex: 1;\n    margin-right: 1rem;\n    padding: 0.5rem 1rem;\n    font-size: 1rem;\n    ', '\n    @media (max-width: 1024px) {\n        margin-right: 0;\n    }\n'], ['\n    flex: 1;\n    margin-right: 1rem;\n    padding: 0.5rem 1rem;\n    font-size: 1rem;\n    ', '\n    @media (max-width: 1024px) {\n        margin-right: 0;\n    }\n']),
+    _templateObject3 = (0, _taggedTemplateLiteral3.default)(['\n    ', '\n    backgroud-color: #ea83ee;\n    padding: 0.5rem 46px;\n    text-transform: uppercase;\n    font-weight: bold; \n    font-family: \'Josefin\';\n    color: white;\n    box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.3);\n     font-size: 1rem;\n    @media (max-width: 1024px){\n         margin-top: 1rem;\n    }\n'], ['\n    ', '\n    backgroud-color: #ea83ee;\n    padding: 0.5rem 46px;\n    text-transform: uppercase;\n    font-weight: bold; \n    font-family: \'Josefin\';\n    color: white;\n    box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.3);\n     font-size: 1rem;\n    @media (max-width: 1024px){\n         margin-top: 1rem;\n    }\n']);
 
 var DefaultStyles = '\n    outline: 0;\n    borde: none;\n    border-radius: 4px;\n';
 
@@ -35,7 +35,7 @@ var Button = _styledComponents2.default.button(_templateObject3, DefaultStyles);
 function Searcher(props) {
     return _react2.default.createElement(Form, { onSubmit: props.onSubmit, __source: {
             fileName: _jsxFileName,
-            lineNumber: 49
+            lineNumber: 48
         }
     }, _react2.default.createElement(InputSeacher, {
         name: 'buscar',
@@ -43,12 +43,12 @@ function Searcher(props) {
         placeholder: 'ingrese sus palabras favoritas',
         __source: {
             fileName: _jsxFileName,
-            lineNumber: 50
+            lineNumber: 49
         }
     }), _react2.default.createElement(Button, {
         __source: {
             fileName: _jsxFileName,
-            lineNumber: 55
+            lineNumber: 54
         }
     }, 'Generar'));
 }

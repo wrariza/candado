@@ -20,17 +20,15 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var _jsxFileName = '/Users/wrariza/MEGA/apps/template-react/components/Title.js';
 
-var _templateObject = (0, _taggedTemplateLiteral3.default)(['\n  font-size: 1rem;\n  height: 37px; \n  width: 150px;\n  background-image: ', ';\n  top: 70px;\n  position: relative;\n'], ['\n  font-size: 1rem;\n  height: 37px; \n  width: 150px;\n  background-image: ', ';\n  top: 70px;\n  position: relative;\n']);
+var _templateObject = (0, _taggedTemplateLiteral3.default)(['\n  font-family: \'Frijole\', \'cursive\';\n  font-size: 5rem;\n  width: 150px;\n'], ['\n  font-family: \'Frijole\', \'cursive\';\n  font-size: 5rem;\n  width: 150px;\n']);
 
-var background = 'url(../static/title.png)';
-
-var T = _styledComponents2.default.h1(_templateObject, background);
+var T = _styledComponents2.default.h1(_templateObject);
 
 function Title(props) {
   return _react2.default.createElement(T, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 13
     }
   }, props.name);
 }

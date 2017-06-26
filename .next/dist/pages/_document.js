@@ -71,26 +71,24 @@ var Template = function (_Document) {
                     fileName: _jsxFileName,
                     lineNumber: 15
                 }
-            }), _react2.default.createElement('link', {
-                href: 'https://fonts.googleapis.com/css?family=Lato', rel: 'stylesheet',
-                __source: {
+            }), _react2.default.createElement('link', { href: 'https://fonts.googleapis.com/css?family=Frijole|Josefin+Sans', rel: 'stylesheet', __source: {
                     fileName: _jsxFileName,
                     lineNumber: 19
                 }
             })), _react2.default.createElement('body', {
                 __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 23
+                    lineNumber: 21
                 }
             }, _react2.default.createElement(_document.Main, {
                 __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 24
+                    lineNumber: 22
                 }
             }), _react2.default.createElement(_document.NextScript, {
                 __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 25
+                    lineNumber: 23
                 }
             })));
         }

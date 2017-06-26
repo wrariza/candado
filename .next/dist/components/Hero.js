@@ -50,14 +50,16 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var _jsxFileName = '/Users/wrariza/MEGA/apps/template-react/components/Hero.js';
 
-var _templateObject = (0, _taggedTemplateLiteral3.default)(['\n   height: 700px;\n   background-image: ', ';\n   color: white;\n'], ['\n   height: 700px;\n   background-image: ', ';\n   color: white;\n']),
-    _templateObject2 = (0, _taggedTemplateLiteral3.default)(['\n    top: 10px;\n'], ['\n    top: 10px;\n']);
+var _templateObject = (0, _taggedTemplateLiteral3.default)(['\n   background-image: ', ';\n'], ['\n   background-image: ', ';\n']),
+    _templateObject2 = (0, _taggedTemplateLiteral3.default)(['\n  background: linear-gradient(to left, rgba(56, 56, 56, 0.5), rgba(64, 60, 64, 0.5));\n'], ['\n  background: linear-gradient(to left, rgba(56, 56, 56, 0.5), rgba(64, 60, 64, 0.5));\n']),
+    _templateObject3 = (0, _taggedTemplateLiteral3.default)(['\n   height: 25rem;\n   color: white;\n   text-aligh: center;\n'], ['\n   height: 25rem;\n   color: white;\n   text-aligh: center;\n']);
 
-var background = 'url(../static/fondo.png)';
+var wallpaper = 'url(../static/seguros.jpg)';
 
-var GridHero = (0, _styledComponents2.default)(_reactStyledFlexboxgrid.Grid)(_templateObject, background);
+var Background = _styledComponents2.default.div(_templateObject, wallpaper);
+var Gradient = _styledComponents2.default.div(_templateObject2);
 
-var Searcher = (0, _styledComponents2.default)(_Search2.default)(_templateObject2);
+var GridHero = (0, _styledComponents2.default)(_reactStyledFlexboxgrid.Grid)(_templateObject3);
 
 var Hero = function (_Component) {
     (0, _inherits3.default)(Hero, _Component);
@@ -71,40 +73,51 @@ var Hero = function (_Component) {
     (0, _createClass3.default)(Hero, [{
         key: 'render',
         value: function render() {
-            return _react2.default.createElement(GridHero, {
-                __source: {
-                    fileName: _jsxFileName,
-                    lineNumber: 22
-                }
-            }, _react2.default.createElement(_reactStyledFlexboxgrid.Row, {
-                __source: {
-                    fileName: _jsxFileName,
-                    lineNumber: 23
-                }
-            }, _react2.default.createElement(_reactStyledFlexboxgrid.Col, { xsOffset: 2, xs: 10, __source: {
-                    fileName: _jsxFileName,
-                    lineNumber: 24
-                }
-            }, _react2.default.createElement(_Title2.default, {
+            return _react2.default.createElement(Background, {
                 __source: {
                     fileName: _jsxFileName,
                     lineNumber: 25
                 }
-            }))), _react2.default.createElement(_reactStyledFlexboxgrid.Row, {
+            }, _react2.default.createElement(Gradient, {
+                __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 26
+                }
+            }, _react2.default.createElement(GridHero, {
+                __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 27
+                }
+            }, _react2.default.createElement(_reactStyledFlexboxgrid.Row, {
                 __source: {
                     fileName: _jsxFileName,
                     lineNumber: 28
                 }
-            }, _react2.default.createElement(_reactStyledFlexboxgrid.Col, { className: 'searcher', xsOffset: 2, xs: 8, __source: {
+            }, _react2.default.createElement(_reactStyledFlexboxgrid.Col, { xsOffset: 2, xs: 5, __source: {
                     fileName: _jsxFileName,
                     lineNumber: 29
                 }
-            }, _react2.default.createElement(Searcher, {
+            }, _react2.default.createElement(_Title2.default, {
+                name: 'Candado',
                 __source: {
                     fileName: _jsxFileName,
                     lineNumber: 30
                 }
-            }))));
+            }))), _react2.default.createElement(_reactStyledFlexboxgrid.Row, {
+                __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 35
+                }
+            }, _react2.default.createElement(_reactStyledFlexboxgrid.Col, { className: 'searcher', xsOffset: 2, xs: 8, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 36
+                }
+            }, _react2.default.createElement(_Search2.default, {
+                __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 37
+                }
+            }))))));
         }
     }]);
 
