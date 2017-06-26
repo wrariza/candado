@@ -38,23 +38,26 @@ var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
 var _reactStyledFlexboxgrid = require('react-styled-flexboxgrid');
 
-var _BoxInfo = require('../components/BoxInfo.js');
-
-var _BoxInfo2 = _interopRequireDefault(_BoxInfo);
-
 var _Title = require('./Title.js');
 
 var _Title2 = _interopRequireDefault(_Title);
+
+var _Search = require('./Search');
+
+var _Search2 = _interopRequireDefault(_Search);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var _jsxFileName = '/Users/wrariza/MEGA/apps/template-react/components/Hero.js';
 
-var _templateObject = (0, _taggedTemplateLiteral3.default)(['\n   height: 700px;\n   background-image: ', ';\n   color: white;\n'], ['\n   height: 700px;\n   background-image: ', ';\n   color: white;\n']);
+var _templateObject = (0, _taggedTemplateLiteral3.default)(['\n   height: 700px;\n   background-image: ', ';\n   color: white;\n'], ['\n   height: 700px;\n   background-image: ', ';\n   color: white;\n']),
+    _templateObject2 = (0, _taggedTemplateLiteral3.default)(['\n    top: 10px;\n'], ['\n    top: 10px;\n']);
 
 var background = 'url(../static/fondo.png)';
 
 var GridHero = (0, _styledComponents2.default)(_reactStyledFlexboxgrid.Grid)(_templateObject, background);
+
+var Searcher = (0, _styledComponents2.default)(_Search2.default)(_templateObject2);
 
 var Hero = function (_Component) {
     (0, _inherits3.default)(Hero, _Component);
@@ -71,35 +74,35 @@ var Hero = function (_Component) {
             return _react2.default.createElement(GridHero, {
                 __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 18
+                    lineNumber: 22
                 }
             }, _react2.default.createElement(_reactStyledFlexboxgrid.Row, {
                 __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 19
+                    lineNumber: 23
                 }
-            }, _react2.default.createElement(_reactStyledFlexboxgrid.Col, { xsOffset: 2, __source: {
+            }, _react2.default.createElement(_reactStyledFlexboxgrid.Col, { xsOffset: 2, xs: 10, __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 20
+                    lineNumber: 24
                 }
             }, _react2.default.createElement(_Title2.default, {
                 __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 21
+                    lineNumber: 25
                 }
             }))), _react2.default.createElement(_reactStyledFlexboxgrid.Row, {
                 __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 24
+                    lineNumber: 28
                 }
-            }, _react2.default.createElement(_reactStyledFlexboxgrid.Col, { xs: 6, xsOffset: 2, __source: {
+            }, _react2.default.createElement(_reactStyledFlexboxgrid.Col, { className: 'searcher', xsOffset: 2, xs: 8, __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 25
+                    lineNumber: 29
                 }
-            }, _react2.default.createElement(_BoxInfo2.default, {
+            }, _react2.default.createElement(Searcher, {
                 __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 26
+                    lineNumber: 30
                 }
             }))));
         }
