@@ -36,21 +36,23 @@ var _styledComponents = require('styled-components');
 
 var _reactStyledFlexboxgrid = require('react-styled-flexboxgrid');
 
-var _theme = require('../lib/theme.js');
+var _theme = require('../lib/theme');
 
-var _Hero = require('../components/Hero.js');
+var _Hero = require('../components/Hero');
 
 var _Hero2 = _interopRequireDefault(_Hero);
 
-var _Logo = require('../components/Logo.js');
+var _Logo = require('../components/Logo');
 
 var _Logo2 = _interopRequireDefault(_Logo);
+
+var _Footer = require('../components/Footer');
+
+var _Footer2 = _interopRequireDefault(_Footer);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var _jsxFileName = '/Users/wrariza/MEGA/apps/candado/pages/index.js?entry';
-
-//import Loading from '../components/Loading';
 
 
 var Home = function (_Component) {
@@ -85,28 +87,33 @@ var Home = function (_Component) {
         value: function render() {
             return _react2.default.createElement(_styledComponents.ThemeProvider, { theme: _theme.defaultTheme, __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 27
+                    lineNumber: 25
                 }
             }, _react2.default.createElement('div', {
                 __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 28
+                    lineNumber: 26
                 }
             }, _react2.default.createElement(_Hero2.default, { onSubmit: this.handleSubmit, __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 29
+                    lineNumber: 27
                 }
             }, _react2.default.createElement(_Logo2.default, {
                 __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 30
+                    lineNumber: 28
                 }
             })), _react2.default.createElement(_reactStyledFlexboxgrid.Grid, {
                 __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 32
+                    lineNumber: 30
                 }
             }, this.state.loading && _react2.default.createElement(Loading, {
+                __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 33
+                }
+            }), _react2.default.createElement(_Footer2.default, {
                 __source: {
                     fileName: _jsxFileName,
                     lineNumber: 35

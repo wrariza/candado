@@ -2,12 +2,10 @@ import Router from 'next/router';
 import React, { Component } from 'react';
 import { ThemeProvider } from 'styled-components';
 import { Grid } from 'react-styled-flexboxgrid';
-
-import { defaultTheme } from '../lib/theme.js';
-import Hero from '../components/Hero.js';
-
-//import Loading from '../components/Loading';
-import Logo from '../components/Logo.js';
+import { defaultTheme } from '../lib/theme';
+import Hero from '../components/Hero';
+import Logo from '../components/Logo';
+import Footer from '../components/Footer'
 
 class Home extends Component {
      state = {
@@ -34,6 +32,7 @@ class Home extends Component {
                             this.state.loading &&
                             <Loading />
                         }
+                        <Footer/>
                     </Grid>
                 </div>
             </ThemeProvider>
