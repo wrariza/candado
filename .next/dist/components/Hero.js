@@ -55,8 +55,7 @@ function Hero(props) {
             fileName: _jsxFileName,
             lineNumber: 39
         }
-    }, _react2.default.createElement(Gradient, {
-        __source: {
+    }, _react2.default.createElement(Gradient, { sm: props.sm, __source: {
             fileName: _jsxFileName,
             lineNumber: 40
         }

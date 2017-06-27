@@ -6,9 +6,10 @@ import { defaultTheme } from '../lib/theme';
 import Hero from '../components/Hero';
 import Logo from '../components/Logo';
 import Footer from '../components/Footer'
+import Loading from '../components/Loading'
 
 class Home extends Component {
-     state = {
+    state = {
         loading: false,
     }
     handleSubmit = (event) => {

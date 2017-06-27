@@ -37,7 +37,7 @@ const GridHero = styled(Grid)`
 function Hero(props){
     return(
         <Background>
-            <Gradient>
+            <Gradient sm={props.sm}>
                 <GridHero>
                     {props.children}
                     <Searcher
